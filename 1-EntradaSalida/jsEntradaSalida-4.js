@@ -4,6 +4,31 @@
 */
 function mostrar()
 {
+	var dato;
+
+	dato = prompt("nombre");
+
+	document.getelementbyid("elnombre").value = dato;
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+	
+
+
+
+	
+	
+
+
 
 }
 
