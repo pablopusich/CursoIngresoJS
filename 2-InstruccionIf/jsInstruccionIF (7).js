@@ -7,14 +7,10 @@ function mostrar() {
     estadoCivil = document.getElementById("estadoCivil").value;
 
 
-    if (edad < 18 && estadoCivil == "Casado") {
+    if (edad < 18 && estadoCivil != "soltero") {
         alert("es muy pequeño para no ser soltero");
 
-    } else {
-        if (edad < 18 && estadoCivil == "Divorciado") {
-            alert("es muy pequeño para no ser soltero");
-        }
-    }
+    } 
 
 
 }//FIN DE LA FUNCIÓN
