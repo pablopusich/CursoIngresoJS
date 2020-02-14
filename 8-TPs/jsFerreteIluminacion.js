@@ -8,7 +8,64 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
-function CalcularPrecio () 
-{
- 	
-}
+function CalcularPrecio() {
+    var Cantidad;
+    var marca;
+    var precio;
+    var descuento;
+
+    //identificar el id de cada var
+    cantidad = document.getElementById("Cantidad").value;
+
+    //punto A y B:
+
+    if (cantidad >= 6) {
+        descuento = 0.5;
+    } else {
+        if (cantidad == 5 && marca == "ArgentinaLuz") {
+            descuento = 0.4;
+        } else {
+            if (cantidad == 5 && marca != "ArgentinaLuz") {
+                descuento = 0.3;
+
+
+                //punto C:
+
+            } else {
+                if (cantidad == 4 && marca == "ArgentinaLuz") {
+                    descuento = 0.25;
+                } else {
+                    if (cantidad == 4 && marca == "FelipeLamparas") {
+                        descuento = 0.25;
+                    } else {
+                        if (cantidad == 4 && marca != "ArgentinaLuz") {
+                            descuento = 0.20;
+                        } else {
+                            if (cantidad == 4 && marca != "FelipeLamparas") {
+                                descuento = 0.20;
+
+                                //punto D
+
+                            } else {
+                                if (cantidad == 3 && marca == "ArgentinaLuz") {
+                                    descuento = 0.15;
+                                } else {
+                                    if (cantidad == 5 && marca != "FelipeLamparas") {
+                                        descuento = 0.10;
+                                    } else {
+                                        if (cantidad == 4 && marca != "ArgentinaLuz") {
+                                            descuento = 0.20;
+                                        } else {
+                                            if (cantidad == 4 && marca != "FelipeLamparas") {
+                                                descuento = 0.20;
+
+
+
+
+
+                                                marca = document.getElementById("Marca").value;
+                                                precio = document.getElementById("precioDescuento").value;
+
+
+
+                                            }
