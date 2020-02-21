@@ -3,9 +3,14 @@ function mostrar() {
     var clave = prompt("ingrese el número clave.");
     var contador = 0;
 
-    while (clave.tolowerCase() != "utn750" && contador < 3) {
+    while (clave.toLowerCase() != "utn750") {
         contador++;
-        
+        if (contador == 3) {
+            break;
+
+        }
+
+
         clave = prompt("error!! ingrese el número clave.");
     }
 
@@ -13,6 +18,6 @@ function mostrar() {
         alert("intentos maximos fallidos");
     } else {
         alert("bienvenido");
-
+    }
 
 }//FIN DE LA FUNCIÓN
