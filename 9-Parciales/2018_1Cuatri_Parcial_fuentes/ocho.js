@@ -2,8 +2,17 @@ function mostrar() {
     var respuesta;
     var numero;
     var letra;
-    var cantidaddenumerospares = 0;
+    var contadorNumerosPares = 0;
+    var contadorNumerosPares = 0;
+    var contadorPositivos = 0;
+    var acumuladorPositivos = 0;
+    var acumuladorNegativos = 0;
     var contador = 0;
+    var maximo;
+    var minimo;
+    var primeravez = true
+    var maximoLetra
+    var minimoLetra
 
     do {
 
@@ -20,12 +29,41 @@ function mostrar() {
         respuesta = confirm("desea continuar");
     } while (respuesta)
 
-
+    // punto a
     if (numero % 2 == 0) {
-        cantidaddenumerospares++;
-    } else {
-        cantidaddenumerospares++;
-    }
+        contadorNumerosPares++;
+    } else if (numero == 0) {
+        contadordeCeros++;
 
+    } else {
+        contadorNumerosImpares++;
+
+
+
+
+        if (primeravez) {
+            primeravez = false;
+            minimo = numero;
+            maximo = numero;
+            maximoLetra = letra;
+            minimoLetra = letra;
+
+        } else {
+
+            if (numero > maximo) {
+                maximo = numero;
+                maximoLetra = Letra;
+            }
+
+            if (numero < minimo) {
+                minimo = numero;
+                minimo = letra;
+            }
+
+        }
+
+respuesta = confirm("desea continuar?");
+
+while ()
 
 

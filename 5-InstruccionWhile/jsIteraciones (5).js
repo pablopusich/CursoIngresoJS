@@ -1,15 +1,15 @@
 function mostrar() {
 
-    var sexo = prompt("ingrese f ó m .");
-    var contador =
+    var sexo;
+    sexo = prompt("ingrese f o m");
 
-while (sexo != "m" && sexo != "f") {
-        sexo = prompt("ingrese f ó m .");
-
+    while (sexo != "f" && sexo != "m") {
+        sexo = prompt("ingrese f o m")
     }
 
 
 
-    document.getElementById('Sexo').value = sexo.tolowerCase();
+
+
 
 }//FIN DE LA FUNCIÓN

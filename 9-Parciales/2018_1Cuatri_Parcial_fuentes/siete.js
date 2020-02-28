@@ -25,7 +25,7 @@ function mostrar() {
 
         acumulador += nota;
 // bandera 
-        if (contador == 1)¨{ 
+        if (contador == 1){ 
             notamasbaja = nota;
 
         }else { if (nota < notamasbaja)
